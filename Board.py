@@ -26,9 +26,9 @@ def test_stub_basic_demo():
     print("n:", board1.n)
     for line in board1.blocks:
         print(line)
-    vector = make_list_the_matrix_into_one_list(matrix)
+    vector = create_a_list_from_a_matrix(matrix)
     print("vector:", vector)
-    matrix = make_a_matrix_from_a_list(vector)
+    matrix = create_a_matrix_from_a_list(vector)
     print("matrix again")
     for line in matrix:
         print(line)
