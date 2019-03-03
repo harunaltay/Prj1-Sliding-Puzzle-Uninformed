@@ -1,5 +1,6 @@
 from _utility_matrix_vector import *
 
+
 # class --------------------------------------------------------------------
 
 class Board:
@@ -9,6 +10,10 @@ class Board:
     def __init__(self, blocks):
         self.n = len(blocks)
         self.blocks = blocks
+
+
+# TODO: Board cTor : Board(matrix, n)
+#       n lazım mı?
 
 
 # test stubs ---------------------------------------------------------------

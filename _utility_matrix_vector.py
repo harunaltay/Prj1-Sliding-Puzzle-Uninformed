@@ -98,5 +98,3 @@ def main():
 
 if __name__ == '__main__':
     test_stub_is_this_matrix_one_of_the_solutions(3)
-
-

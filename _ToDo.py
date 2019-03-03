@@ -1,4 +1,6 @@
-# TODO: read the matrix from a text file
+
+
+# TODO: create Board <- matrix <- file.txt : a test stub
 
 # TODO: is this matrix solvable?
 #       what is the number of inversion of this vector?
