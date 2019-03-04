@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acd7df4d-dc8e-4b3a-82d0-082933f42c9b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/SolverBFS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SolverDFS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/_example_deque.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/_example_timing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Board.py" beforeDir="false" afterPath="$PROJECT_DIR$/Board.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/Node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solver_BFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ToDo.py" beforeDir="false" afterPath="$PROJECT_DIR$/_ToDo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_utility_matrix_vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/_utility_matrix_vector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_utility_solvability.py" beforeDir="false" afterPath="$PROJECT_DIR$/_utility_solvability.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,59 +24,25 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_example_timing__1_.coverage" NAME="_example_timing (1) Coverage Results" MODIFIED="1551732225047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_scratch_file.coverage" NAME="_scratch_file Coverage Results" MODIFIED="1551682535337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_inversion.coverage" NAME="_utility_inversion Coverage Results" MODIFIED="1551642502188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_example_deque.coverage" NAME="_example_deque Coverage Results" MODIFIED="1551723490945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_example_deque__1_.coverage" NAME="_example_deque (1) Coverage Results" MODIFIED="1551732118911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_matrix_vector.coverage" NAME="_utility_matrix_vector Coverage Results" MODIFIED="1551638481817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Node.coverage" NAME="Node Coverage Results" MODIFIED="1551722460447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Solver.coverage" NAME="Solver Coverage Results" MODIFIED="1551722598920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_solvability.coverage" NAME="_utility_solvability Coverage Results" MODIFIED="1551684389692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_example_timing.coverage" NAME="_example_timing Coverage Results" MODIFIED="1551732072169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_inversion.coverage" NAME="_utility_inversion Coverage Results" MODIFIED="1551642502188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Solver_BFS.coverage" NAME="Solver_BFS Coverage Results" MODIFIED="1551732509088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$fibonacci_import_example.coverage" NAME="fibonacci_import_example Coverage Results" MODIFIED="1551625804364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_file.coverage" NAME="_utility_file Coverage Results" MODIFIED="1551638554932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_solvability.coverage" NAME="_utility_solvability Coverage Results" MODIFIED="1551684389692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Board.coverage" NAME="Board Coverage Results" MODIFIED="1551689299589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Board.coverage" NAME="Board Coverage Results" MODIFIED="1551722452796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$SolverDFS.coverage" NAME="SolverDFS Coverage Results" MODIFIED="1551733056692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$SolverBFS.coverage" NAME="SolverBFS Coverage Results" MODIFIED="1551732879863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_ToDo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Board.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_utility_file.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_utility_solvability.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="103" selection-end-line="103" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,22 +59,29 @@
       <list>
         <option value="$PROJECT_DIR$/examples/hello.txt" />
         <option value="$PROJECT_DIR$/puzzle-text-files/_utility_matrix_vector.py" />
-        <option value="$PROJECT_DIR$/Node.py" />
-        <option value="$PROJECT_DIR$/_utility_matrix_vector.py" />
         <option value="$PROJECT_DIR$/_utility_file.py" />
         <option value="$PROJECT_DIR$/_utility_inversion.py" />
-        <option value="$PROJECT_DIR$/_ToDo.py" />
         <option value="$PROJECT_DIR$/_scratch_file.py" />
         <option value="$PROJECT_DIR$/_utility_solvability.py" />
+        <option value="$PROJECT_DIR$/_utility_matrix_vector.py" />
         <option value="$PROJECT_DIR$/Board.py" />
+        <option value="$PROJECT_DIR$/_ToDo.py" />
+        <option value="$PROJECT_DIR$/Node.py" />
+        <option value="$PROJECT_DIR$/Solver.py" />
+        <option value="$PROJECT_DIR$/_example_deque.py" />
+        <option value="$PROJECT_DIR$/_example_timing.py" />
+        <option value="$PROJECT_DIR$/examples/_example_timing.py" />
+        <option value="$PROJECT_DIR$/Solver_BFS.py" />
+        <option value="$PROJECT_DIR$/SolverBFS.py" />
+        <option value="$PROJECT_DIR$/SolverDFS.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="675" />
-    <option name="y" value="7" />
-    <option name="width" value="1239" />
-    <option name="height" value="1018" />
+    <option name="x" value="467" />
+    <option name="y" value="6" />
+    <option name="width" value="1448" />
+    <option name="height" value="1019" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -140,6 +121,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AI_Workspaces\Prj1-Sliding-Puzzle-Uninformed\examples" />
       <recent name="D:\AI_Workspaces\Prj1-Sliding-Puzzle-Uninformed" />
     </key>
   </component>
@@ -155,8 +137,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Board">
-    <configuration name="Board" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.SolverDFS">
+    <configuration name="SolverBFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Prj1-Sliding-Puzzle-Uninformed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -169,7 +151,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Board.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SolverBFS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,7 +160,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_scratch_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SolverDFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Prj1-Sliding-Puzzle-Uninformed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,7 +173,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_scratch_file.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SolverDFS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,7 +182,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_utility_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Solver_BFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Prj1-Sliding-Puzzle-Uninformed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -213,7 +195,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_utility_file.py" />
+      <option name="SCRIPT_NAME" value="D:\AI_Workspaces\Prj1-Sliding-Puzzle-Uninformed\SolverBFS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -222,7 +204,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_utility_inversion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_example_deque (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Prj1-Sliding-Puzzle-Uninformed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,12 +212,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_utility_inversion.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/_example_deque.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -244,7 +226,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_utility_solvability" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="_example_timing (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Prj1-Sliding-Puzzle-Uninformed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,12 +234,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_utility_solvability.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/_example_timing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -268,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Board" />
-        <item itemvalue="Python._utility_solvability" />
-        <item itemvalue="Python._scratch_file" />
-        <item itemvalue="Python._utility_inversion" />
-        <item itemvalue="Python._utility_file" />
+        <item itemvalue="Python.SolverDFS" />
+        <item itemvalue="Python.SolverBFS" />
+        <item itemvalue="Python.Solver_BFS" />
+        <item itemvalue="Python._example_timing (1)" />
+        <item itemvalue="Python._example_deque (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -291,22 +273,22 @@
       <workItem from="1551626653033" duration="6215000" />
       <workItem from="1551636278682" duration="12044000" />
       <workItem from="1551681994647" duration="7892000" />
+      <workItem from="1551701563790" duration="27801000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26391000" />
+    <option name="totallyTimeSpent" value="54192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="540" y="6" width="991" height="814" extended-state="0" />
-    <editor active="true" />
+    <frame x="374" y="5" width="1158" height="815" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21589689" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23861566" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30498534" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32796487" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37188873" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -349,13 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/puzzle-text-files/puzzle2x2-02.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -393,16 +368,6 @@
     <entry file="file://$PROJECT_DIR$/puzzle-text-files/puzzle4x4-01.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_utility_matrix_vector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_utility_inversion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -410,9 +375,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_scratch_file.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_scratch_file.py" />
     <entry file="file://$PROJECT_DIR$/examples/file_example.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -420,36 +383,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_ToDo.py">
+    <entry file="file://$PROJECT_DIR$/_utility_matrix_vector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_utility_solvability.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="103" selection-end-line="103" selection-end-column="9" />
+        <state relative-caret-position="216">
+          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="33" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_utility_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="561">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_utility_solvability.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="115" selection-start-line="115" selection-end-line="119" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/_example_deque.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/_example_timing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ToDo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        <state relative-caret-position="-493">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolverDFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolverBFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -18,7 +18,7 @@ def row_of_blank_square(matrix):
 
 def is_this_matrix_solvable(matrix):
     n = len(matrix)
-    vector = create_a_list_from_a_matrix(matrix)
+    vector = create_a_vector_from_a_matrix(matrix)
     number_of_inversions = the_number_of_inversion_in_a_list_of_integers(vector)
     answer = False
     if n % 2 == 1:
@@ -47,7 +47,7 @@ def is_this_matrix_solvable(matrix):
 
 
 def interchange_two_tiles(matrix):
-    vector = create_a_list_from_a_matrix(matrix)
+    vector = create_a_vector_from_a_matrix(matrix)
     length = len(vector)
 
     x = -1

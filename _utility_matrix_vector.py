@@ -19,7 +19,7 @@ def create_a_matrix_solution(n):
 
 def create_a_random_matrix(n):
     matrix = create_a_matrix_solution(n)
-    vector = create_a_list_from_a_matrix(matrix)
+    vector = create_a_vector_from_a_matrix(matrix)
     random.shuffle(vector)
     matrix: List[List[int]] = create_a_matrix_from_a_list(vector)
     return matrix
@@ -36,7 +36,7 @@ def create_a_matrix_from_a_list(vector):
     return matrix
 
 
-def create_a_list_from_a_matrix(matrix):
+def create_a_vector_from_a_matrix(matrix):
     vector = []
     for line in matrix:
         for tile in line:
@@ -45,7 +45,7 @@ def create_a_list_from_a_matrix(matrix):
 
 
 def is_this_matrix_one_of__the_solutions(matrix):
-    vector = create_a_list_from_a_matrix(matrix)
+    vector = create_a_vector_from_a_matrix(matrix)
     answer = is_this_list_monotone_increasing_one_by_one(vector)
     return answer
 
@@ -73,7 +73,7 @@ def test_stub_create_a_random_matrix(n):
 def test_stub_is_this_list_monontone(n):
     matrix = create_a_matrix_solution(n)
     matrix = create_a_random_matrix(n)
-    vector = create_a_list_from_a_matrix(matrix)
+    vector = create_a_vector_from_a_matrix(matrix)
     answer = is_this_list_monotone_increasing_one_by_one(vector)
     print(answer)
     print("vector:", vector)
