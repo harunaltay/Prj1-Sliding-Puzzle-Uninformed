@@ -2,7 +2,8 @@ from _utility_inversion import *
 from _utility_matrix_vector import *
 
 
-def row_of_blank_square(matrix, n):
+def row_of_blank_square(matrix):
+    n = len(matrix)
     row = -1
     for i in range(n):
         for j in range(n):
@@ -15,7 +16,8 @@ def row_of_blank_square(matrix, n):
     return row
 
 
-def is_this_matrix_solvable(matrix, n):
+def is_this_matrix_solvable(matrix):
+    n = len(matrix)
     vector = create_a_list_from_a_matrix(matrix)
     number_of_inversions = the_number_of_inversion_in_a_list_of_integers(vector)
     answer = False
@@ -31,7 +33,7 @@ def is_this_matrix_solvable(matrix, n):
     else:
         # if n is even -> if number of inversions + row of the blank square is odd -> solvable
         # print("n is even")
-        row_number = row_of_blank_square(matrix, n)
+        row_number = row_of_blank_square(matrix)
         # print("row_number:", row_number)
         invariant = number_of_inversions + row_number
         # print("invariant:", invariant)
@@ -70,7 +72,7 @@ def interchange_two_tiles(matrix):
 
 def create_a_matrix_which_is_solvable(n):
     matrix = create_a_random_matrix(n)
-    is_solvable = is_this_matrix_solvable(matrix, n)
+    is_solvable = is_this_matrix_solvable(matrix)
     if is_solvable:
         return matrix
     else:
@@ -80,7 +82,7 @@ def create_a_matrix_which_is_solvable(n):
 
 def create_a_matrix_which_is_unsolvable(n):
     matrix = create_a_random_matrix(n)
-    is_solvable = is_this_matrix_solvable(matrix, n)
+    is_solvable = is_this_matrix_solvable(matrix)
     if not is_solvable:
         return matrix
     else:
@@ -94,14 +96,14 @@ def create_a_matrix_which_is_unsolvable(n):
 def test_stub_solvable_matrix():
     n = 4
     matrix = create_a_matrix_which_is_solvable(n)
-    answer = is_this_matrix_solvable(matrix, n)
+    answer = is_this_matrix_solvable(matrix)
     print("is solvable:", answer)
 
 
 def test_stub_unsolvable_matrix():
     n = 4
     matrix = create_a_matrix_which_is_unsolvable(n)
-    answer = is_this_matrix_solvable(matrix, n)
+    answer = is_this_matrix_solvable(matrix)
     print("is solvable:", answer)
 
 
@@ -117,9 +119,8 @@ def test_stub_solvable_file():
     # f_name = 'puzzle-text-files/puzzle4x4-01.txt'
     f_name = 'puzzle-text-files/puzzle4x4-unsolvable.txt'
 
-    n = 4
     vector, matrix = create_a_vector_and_a_matrix_from_a_text_file(f_name)
-    answer = is_this_matrix_solvable(matrix, n)
+    answer = is_this_matrix_solvable(matrix)
     print("is solvable:", answer)
 
 
