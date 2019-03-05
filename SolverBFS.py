@@ -1,3 +1,5 @@
+from _utility_matrix_equality import are_two_matrices_the_same
+from _utility_Solver import trace_to_the_initial_node_from_the_solution_node
 from Solver import *
 from Board import *
 from collections import deque
@@ -15,51 +17,35 @@ class SolverBFS (Solver):
 
         self.queue.append(self.node_initial)
 
-        counter_loop = 0
-        conter_number_of_nodes_expanded = 0
+        counter_loop = 0  # number_of_nodes_expanded, extracted from the fringe
         counter_number_of_nodes_appended = 0
 
         while True:
             counter_loop += 1
             node_popped = self.queue.popleft()
-            # print("popped from the fringe:", node_popped.board.matrix)
 
+            # print("popped from the fringe:", node_popped.board.matrix)
             # print("aşağıdaki matrisler fringe'ye append ediliyor ...")
 
             if is_this_matrix_one_of__the_solutions(node_popped.board.matrix):
                 print()
                 print("*** bulundu:", node_popped.board.matrix)
-                print("counter_loop:", counter_loop)
+                print("counter_loop (number of expanded/extracted from the fringe nodes):", counter_loop)
                 print("counter_number_of_nodes_appended:", counter_number_of_nodes_appended)
                 print()
-                answer_list = []
-                node_iter =node_popped
-                while True:
-                    matrix = node_iter.board.matrix
-                    answer_list.append(matrix)
-                    if node_iter.node_parent is None:
-                        answer_list.reverse()
-                        return answer_list
-                    node_iter = node_iter.node_parent
+                answer_list = trace_to_the_initial_node_from_the_solution_node(node_popped)
+                return answer_list
 
-            # conter_number_of_nodes_expanded += 1 - yanlış oldu
+            board_list_neighbors = node_popped.board.get_neighbors()
 
-            # bu child grand_parent ile aynıysa, geç, continue ...
-            board_list = node_popped.board.get_neighbors()
-            same = True
-            for board_item in board_list:
+            for board_item in board_list_neighbors:
+
+                # bu child grand_parent ile aynıysa, geç, continue ...
                 if node_popped.node_parent is not None:
-                    for i in range(self.n):
-                        for j in range(self.n):
-                            if board_item.matrix[i][j] != node_popped.node_parent.board.matrix[i][j]:
-                                same = False
-                                break
-                        if not same:
-                            break
-                else:
-                    same = False
-                if same:
-                    continue
+                    is_child_and_grand_parent_same = \
+                        are_two_matrices_the_same(board_item.matrix, node_popped.node_parent.board.matrix)
+                    if is_child_and_grand_parent_same:
+                        continue
 
                 counter_number_of_nodes_appended += 1
 
@@ -71,7 +57,9 @@ class SolverBFS (Solver):
                 # print()
 
             # print(counter_loop, "loop ----------------------------------------------------------------------------")
+            # garanti olsun diye. yine de 1.000.000 loop gerektirecek puzzle olur mu bilmem. Olursa bakarız.
             if counter_loop == 1000000:
+                print("loop 1.000.000 oldu. Çalışma kesildi.")
                 break
 
 
