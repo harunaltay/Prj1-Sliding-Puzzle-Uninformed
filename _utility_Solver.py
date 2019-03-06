@@ -1,6 +1,6 @@
 
 
-def trace_to_the_initial_node_from_the_solution_node(node_iter):
+def trace_to_the_initial_node_from_the_solution_node_iterative(node_iter):
     answer_list = []
 
     while True:

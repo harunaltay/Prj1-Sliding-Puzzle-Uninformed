@@ -1,5 +1,5 @@
 from _utility_matrix_equality import are_two_matrices_the_same
-from _utility_Solver import trace_to_the_initial_node_from_the_solution_node
+from _utility_Solver import trace_to_the_initial_node_from_the_solution_node_iterative
 from Solver import *
 from Board import *
 from collections import deque
@@ -10,10 +10,9 @@ class SolverBFS (Solver):
 
     def __init__(self, matrix):
         super().__init__(matrix)
-        self.queue = deque()
 
     # Solves the puzzle
-    def solve(self):
+    def tree_search_BFS(self):
         self.time_start = time.time()
 
         if not self.is_solvable:
@@ -29,21 +28,45 @@ class SolverBFS (Solver):
         while True:
             self.counter_loop += 1
 
-            # print("popped from the fringe:", node_popped.board.matrix)
+            # IF THE FRONTIER IS EMPTY ...
+            # THEN RETURN FAILURE
+
+            if len(self.queue) == 0:
+                # print("failure : queue/frontier/fringe is empty.. no solution found! .. returns.")
+                self.message_short = "failure.. no solution.."
+                self.message_long = "failure : queue/frontier/fringe is empty.. no solution found! .. returns."
+                self.time_elapsed = 0
+                return self.answer_list, self.message_short, self.message_long, self.time_elapsed
+
+            # CHOOSE A LEAF NODE AND ...
+            # REMOVE IT FROM THE FRONTIER
+
+            # Choose the shallowest node from the frontier
+            # print("popped from the queue/frontier/fringe:", node_popped.board.matrix)
             node_popped = self.queue.popleft()
+
+            # IF THE NODE CONTAINS A GOAL STATE ...
+            # THEN RETURN THE CORRESPONDING SOLUTION
 
             # pop ettiğimiz node, bir çözüm node'si mi?
             if is_this_matrix_one_of__the_solutions(node_popped.board.matrix):
-                # print("*** bulundu:", node_popped.board.matrix)
-                self.answer_list = trace_to_the_initial_node_from_the_solution_node(node_popped)
+                # print("*** !!! BULUNDU !!! :", node_popped.board.matrix)
+                self.answer_list = \
+                    trace_to_the_initial_node_from_the_solution_node_iterative(node_popped)
                 self.time_stop = time.time()
                 self.time_elapsed = self.time_stop - self.time_start
 
-                return self.answer_list, self.message_short, self.message_long, self.time_elapsed
+                return self.answer_list, \
+                       self.message_short, \
+                       self.message_long, \
+                       self.time_elapsed
 
             # pop edilen node 'bir solution' değilmiş...
             # ... öyleyse bu node'yi patlat, expand et, ...
             # ... sonra da fringe'ye append et, grand-parent'i ile aynı olan node hariç.
+
+            # "EXPAND" THE CHOOSEN NODE, ...
+            # ADDING THE RESULTING NODES TO THE FRONTIER
 
             board_list_neighbors = node_popped.board.get_neighbors()
 
@@ -54,13 +77,15 @@ class SolverBFS (Solver):
                 # bu child grand_parent ile aynıysa, geç, continue ...
                 if node_popped.node_parent is not None:
                     is_child_and_grand_parent_same = \
-                        are_two_matrices_the_same(board_item.matrix, node_popped.node_parent.board.matrix)
+                        are_two_matrices_the_same\
+                            (board_item.matrix, node_popped.node_parent.board.matrix)
                     if is_child_and_grand_parent_same:
                         continue
 
                 self.counter_number_of_nodes_appended += 1
 
                 # bu child'i append et ...
+                # aha bu nodu EXPLORE ettik! Artık yaşıyo! Galiba öyle oldu. Hadi hayırlısı.
                 node_new = Node(board_item, node_popped)
                 self.queue.append(node_new)
                 # for line in board_item.matrix:
@@ -107,7 +132,7 @@ def test_stub_solver_bfs_main_from_the_matrix(matrix):
         print("this puzzle is not solvable... method returns...")
         return
 
-    answer_list, message_short, message_long, time_elapsed = solver.solve()
+    answer_list, message_short, message_long, time_elapsed = solver.tree_search_BFS()
 
     s = solver.report_to_string()
     print(s)
