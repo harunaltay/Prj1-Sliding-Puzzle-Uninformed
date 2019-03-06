@@ -9,6 +9,8 @@ class Solver:
         self.queue = deque()
         self.stack = []
 
+        self.limit = -1
+
         self.n = len(matrix)
         self.matrix_initial = matrix
         self.is_solvable = is_this_matrix_solvable(matrix)
@@ -40,7 +42,7 @@ class Solver:
         s += "*** Solution found!\n"
         s += "The number of moves/steps to the solution: " + str(len(self.answer_list) - 1) + " moves.\n"
         s += "time_elapsed: " + str(self.time_elapsed) + "\n"
-        s += "message_short: " + str(self.message_short) + "\n"
+        s += "message_short: " + self.message_short + "\n"
         s += "message_long: " + self.message_long + "\n"
         s += "counter_loop (number of expanded/extracted from the fringe nodes): " + str(self.counter_loop) + "\n"
         s += "counter_number_of_nodes_appended: " + str(self.counter_number_of_nodes_appended) + "\n"
@@ -50,7 +52,7 @@ class Solver:
 
         step = 0
         for matrix in self.answer_list:
-            s += "step: " + str(step) + "\n\n"
+            s += "move: " + str(step) + "\n\n"
             for line in matrix:
                 s += str(line) + "\n"
             s += "\n"
@@ -63,4 +65,3 @@ class Solver:
 
 if __name__ == '__main__':
     print("This is an abstract class!!! Dont run it! Run one of its descendants.")
-

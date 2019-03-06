@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="acd7df4d-dc8e-4b3a-82d0-082933f42c9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Node.py" beforeDir="false" afterPath="$PROJECT_DIR$/Node.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SolverDFS_Depth_Limited_iterative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SolverDFS_Iterative_Deepening_iterative.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SolverDFS_iterative.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Solver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SolverBFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/SolverBFS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_utility_Solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/_utility_Solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SolverDFS.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_utility_matrix_vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/_utility_matrix_vector.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +27,12 @@
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_example_print.coverage" NAME="_example_print Coverage Results" MODIFIED="1551812717606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_example_deque__1_.coverage" NAME="_example_deque (1) Coverage Results" MODIFIED="1551732118911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_matrix_vector.coverage" NAME="_utility_matrix_vector Coverage Results" MODIFIED="1551638481817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Solver.coverage" NAME="Solver Coverage Results" MODIFIED="1551832460245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Node.coverage" NAME="Node Coverage Results" MODIFIED="1551834041772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Node.coverage" NAME="Node Coverage Results" MODIFIED="1551840111444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Solver.coverage" NAME="Solver Coverage Results" MODIFIED="1551842100432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$SolverDFS_Depth_Limited_iterative.coverage" NAME="SolverDFS_Depth_Limited_iterative Coverage Results" MODIFIED="1551852513660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_solvability.coverage" NAME="_utility_solvability Coverage Results" MODIFIED="1551684389692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$SolverDFS_Iterative_Deepening_iterative.coverage" NAME="SolverDFS_Iterative_Deepening_iterative Coverage Results" MODIFIED="1551852599996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$SolverDFS_iterative.coverage" NAME="SolverDFS_iterative Coverage Results" MODIFIED="1551851022920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_example_timing.coverage" NAME="_example_timing Coverage Results" MODIFIED="1551732072169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_inversion.coverage" NAME="_utility_inversion Coverage Results" MODIFIED="1551642502188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Solver_BFS.coverage" NAME="Solver_BFS Coverage Results" MODIFIED="1551732509088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -33,19 +40,28 @@
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_matrix_equality.coverage" NAME="_utility_matrix_equality Coverage Results" MODIFIED="1551784388293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$_utility_file.coverage" NAME="_utility_file Coverage Results" MODIFIED="1551638554932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$Board.coverage" NAME="Board Coverage Results" MODIFIED="1551722452796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$SolverDFS.coverage" NAME="SolverDFS Coverage Results" MODIFIED="1551733056692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$SolverBFS.coverage" NAME="SolverBFS Coverage Results" MODIFIED="1551834626342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$SolverDFS.coverage" NAME="SolverDFS Coverage Results" MODIFIED="1551839404526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Prj1_Sliding_Puzzle_Uninformed$SolverBFS.coverage" NAME="SolverBFS Coverage Results" MODIFIED="1551849332959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Prj1-Sliding-Puzzle-Uninformed" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Solver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SolverBFS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="488">
+              <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
               <folding>
                 <element signature="e#0#62#0" expanded="true" />
               </folding>
@@ -54,21 +70,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Node.py">
+        <entry file="file://$PROJECT_DIR$/SolverDFS_iterative.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="102">
+              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SolverDFS_Depth_Limited_iterative.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="156" column="20" selection-start-line="156" selection-start-column="20" selection-end-line="156" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#62#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Solver.py">
+        <entry file="file://$PROJECT_DIR$/SolverDFS_Iterative_Deepening_iterative.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="1292">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
               <folding>
-                <element signature="e#106#124#0" expanded="true" />
+                <element signature="e#0#47#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,21 +133,24 @@
         <option value="$PROJECT_DIR$/_example_timing.py" />
         <option value="$PROJECT_DIR$/examples/_example_timing.py" />
         <option value="$PROJECT_DIR$/Solver_BFS.py" />
-        <option value="$PROJECT_DIR$/SolverDFS.py" />
         <option value="$PROJECT_DIR$/_utility_matrix_equality.py" />
         <option value="$PROJECT_DIR$/_utility_Solver.py" />
         <option value="$PROJECT_DIR$/_example_print.py" />
-        <option value="$PROJECT_DIR$/Solver.py" />
+        <option value="$PROJECT_DIR$/SolverDFS.py" />
         <option value="$PROJECT_DIR$/Node.py" />
+        <option value="$PROJECT_DIR$/SolverDFS_Iterative_Deepening_iterative.py" />
+        <option value="$PROJECT_DIR$/SolverDFS_Depth_Limited_iterative.py" />
+        <option value="$PROJECT_DIR$/SolverDFS_iterative.py" />
         <option value="$PROJECT_DIR$/SolverBFS.py" />
+        <option value="$PROJECT_DIR$/Solver.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="685" />
-    <option name="y" value="8" />
-    <option name="width" value="1230" />
-    <option name="height" value="1017" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="285" />
+    <option name="y" value="6" />
+    <option name="width" value="1630" />
+    <option name="height" value="1019" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -126,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,7 +172,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,29 +206,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SolverBFS">
-    <configuration name="Node" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Prj1-Sliding-Puzzle-Uninformed" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Node.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.SolverDFS_Iterative_Deepening_iterative">
     <configuration name="Solver" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Prj1-Sliding-Puzzle-Uninformed" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -239,7 +251,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_example_print" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SolverDFS_Depth_Limited_iterative" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Prj1-Sliding-Puzzle-Uninformed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -252,7 +264,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_example_print.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SolverDFS_Depth_Limited_iterative.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -261,7 +273,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="_utility_matrix_equality" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SolverDFS_Iterative_Deepening_iterative" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Prj1-Sliding-Puzzle-Uninformed" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -274,7 +286,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_utility_matrix_equality.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SolverDFS_Iterative_Deepening_iterative.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SolverDFS_iterative" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Prj1-Sliding-Puzzle-Uninformed" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SolverDFS_iterative.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,11 +319,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SolverDFS_Iterative_Deepening_iterative" />
+        <item itemvalue="Python.SolverDFS_Depth_Limited_iterative" />
+        <item itemvalue="Python.SolverDFS_iterative" />
         <item itemvalue="Python.SolverBFS" />
-        <item itemvalue="Python.Node" />
         <item itemvalue="Python.Solver" />
-        <item itemvalue="Python._example_print" />
-        <item itemvalue="Python._utility_matrix_equality" />
       </list>
     </recent_temporary>
   </component>
@@ -312,23 +346,25 @@
       <workItem from="1551782029686" duration="6633000" />
       <workItem from="1551798608270" duration="8342000" />
       <workItem from="1551820750440" duration="10687000" />
+      <workItem from="1551835264218" duration="15759000" />
+      <workItem from="1551852942095" duration="445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79854000" />
+    <option name="totallyTimeSpent" value="96058000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="548" y="7" width="984" height="813" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49817517" weight="0.244921" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49817517" visible="true" weight="0.20402685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5018248" side_tool="true" weight="0.19836552" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32599118" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24375919" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.58064514" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34164223" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -370,6 +406,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Solver.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/examples/hello.txt">
@@ -486,23 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SolverDFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_utility_matrix_equality.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -518,23 +548,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_example_print.py" />
-    <entry file="file://$PROJECT_DIR$/Solver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#106#124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_utility_Solver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -542,10 +555,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolverDFS_Iterative_Deepening_iterative.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolverDFS_iterative.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SolverBFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="488">
+          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SolverDFS_Depth_Limited_iterative.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="156" column="20" selection-start-line="156" selection-start-column="20" selection-end-line="156" selection-end-column="20" />
           <folding>
             <element signature="e#0#62#0" expanded="true" />
           </folding>

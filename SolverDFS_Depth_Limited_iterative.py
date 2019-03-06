@@ -5,14 +5,16 @@ from Board import *
 import time
 
 
-class SolverBFS (Solver):
+class SolverDFS_Depth_Limited_iterative (Solver):
 
     def __init__(self, matrix):
         super().__init__(matrix)
 
     # Solves the puzzle
-    def tree_search_BFS(self):
+    def tree_search_DFS_Depth_Limited_iterative(self, limit):
         self.time_start = time.time()
+
+        self.limit = limit
 
         if not self.is_solvable:
             print("The puzzle is not a solvable puzzle. Check it before calling this method. halting.")
@@ -20,7 +22,15 @@ class SolverBFS (Solver):
 
         # print("solving begins ... in Solver_BFS ...")
 
-        self.queue.append(self.node_initial)
+        # Burası mühim. Şimdi stack'a sokacağız, daha EXPAND edilmemiş!
+        # Pop ederken bunu kontrol edeceğiz. Ona göre:
+        # EĞER daha EXPAND edilmemişse, EXPAND edip, yerine geri append edeceğiz, sonra da çocuklarını append edeceğiz.
+        # EĞER daha önceden EXPAND edilmişse, ve dahi buna yine sıra gelmişse, o zaman işlem içinde unexpanded bir
+        # bir çocuğu kalmamış demektir, ve dahi bunun da işi bitmiş demektir, termeinatedler cennetine gönderilecektir.
+        self.node_initial.expanded = False
+        self.node_initial.depth = 0
+
+        self.stack.append(self.node_initial)
 
         self.counter_loop = 0
 
@@ -32,8 +42,8 @@ class SolverBFS (Solver):
             # IF THE FRONTIER IS EMPTY ...
             # THEN RETURN FAILURE
 
-            if len(self.queue) == 0:
-                # print("failure : queue/frontier/fringe is empty.. no solution found! .. returns.")
+            if len(self.stack) == 0:
+                print("---> failure : queue/frontier/fringe is empty.. no solution found! .. returns.")
                 self.message_short = "failure.. no solution.."
                 self.message_long = "failure : queue/frontier/fringe is empty.. no solution found! .. returns."
                 self.time_stop = time.time()
@@ -43,9 +53,9 @@ class SolverBFS (Solver):
             # CHOOSE A LEAF NODE AND ...
             # REMOVE IT FROM THE FRONTIER
 
-            # Choose the shallowest node from the frontier
+            # Choose the deepest node from the frontier
             # print("popped from the queue/frontier/fringe:", node_popped.board.matrix)
-            node_popped = self.queue.popleft()
+            node_popped = self.stack.pop()
 
             # IF THE NODE CONTAINS A GOAL STATE ...
             # THEN RETURN THE CORRESPONDING SOLUTION
@@ -60,13 +70,32 @@ class SolverBFS (Solver):
                 self.message_short = "Solution found .."
                 self.message_long = "Solution found .."
 
+
                 return self.answer_list, \
                        self.message_short, \
                        self.message_long, \
                        self.time_elapsed
 
             # pop edilen node 'bir solution' değilmiş...
-            # ... öyleyse bu node'yi patlat, expand et, ...
+
+            if node_popped.depth >= self.limit:
+                # hakkın tükendi.. kusura bakma.. daha devam edemezsin..
+                # arayışını burada kesiyoruz..
+                continue
+
+            # Şimdi DFS dünyasındayız. Önce bir bak hele, önceden EXPAND edilmiş mi?
+            # EĞER önceden EXPAND edilmişse... bu nodu terminate edeceğiz, maalesef...
+
+            if node_popped.expanded:
+                # nodumuzu terminate ediyoruz.. bye bye..
+                continue
+
+            node_popped.expanded = True
+
+            # geri append et ...
+            self.stack.append(node_popped)
+
+            # ... öyleyse bu node'yi patlat, explode et, expand et, ...
             # ... sonra da fringe'ye append et, grand-parent'i ile aynı olan node hariç.
 
             # "EXPAND" THE CHOOSEN NODE, ...
@@ -90,41 +119,47 @@ class SolverBFS (Solver):
 
                 # bu child'i append et ...
                 # aha bu nodu EXPLORE ettik! Artık yaşıyo! Galiba öyle oldu. Hadi hayırlısı.
+                # nur topu gibi bir nodumuz oldu. EXPAND edilmemiş.
                 node_new = Node(board_item, node_popped)
-                self.queue.append(node_new)
+                node_new.expanded = False
+                node_new.depth = node_popped.depth + 1
+
+                self.stack.append(node_new)
                 # for line in board_item.matrix:
                 #     print(line)
                 # print()
 
             # print(counter_loop, "loop ---------------------------------------------------------")
             # garanti olsun diye. yine de 1.000.000 loop gerektirecek puzzle olur mu bilmem. Olursa bakarız.
-            if self.counter_loop == 1000000:
+            # oldu, şimdi bakıyoruz. DFS bu bir milyon sınırını aştı, çelışma kesildi. işe yaradı. (mı acaba? yoksa daha mı verse idik?)
+            if self.counter_loop == 10000000:  # 10 milyon yaptım.. Hadi hayırlısı..
                 print("Loop 1.000.000 oldu. Çalışma kesildi.")
                 break
 
 
-def test_stub_solver_bfs_main():
-    # f_name = 'puzzle-text-files/puzzle2x2-00.txt'
+def test_stub_solver_dfs_main():
+    f_name = 'puzzle-text-files/puzzle2x2-00.txt'
     # f_name = 'puzzle-text-files/puzzle4x4-00.txt'
     # f_name = 'puzzle-text-files/puzzle3x3-00.txt'
     # f_name = 'puzzle-text-files/puzzle3x3-03.txt'
+    # f_name = 'puzzle-text-files/puzzle2x2-04.txt'   # DFS bunu harika çözdü! İnanamadım! Özel seçilmiş bir durum olabilir.
     # f_name = 'puzzle-text-files/puzzle3x3-05.txt'
-    f_name = 'puzzle-text-files/puzzle4x4-07.txt'
+    # f_name = 'puzzle-text-files/puzzle4x4-07.txt'
     # f_name = 'puzzle-text-files/puzzle3x3-31.txt'
     # f_name = 'puzzle-text-files/puzzle3x3-unsolvable.txt'
     # f_name = 'puzzle-text-files/puzzle4x4-01.txt'
     # f_name = 'puzzle-text-files/puzzle4x4-unsolvable.txt'
 
-    test_stub_solver_bfs_main_from_file_name(f_name)
+    test_stub_solver_dfs_main_from_file_name(f_name)
 
 
-def test_stub_solver_bfs_main_from_file_name(file_name):
+def test_stub_solver_dfs_main_from_file_name(file_name):
     vector, matrix = create_a_vector_and_a_matrix_from_a_text_file(file_name)
 
-    test_stub_solver_bfs_main_from_the_matrix(matrix)
+    test_stub_solver_dfs_main_from_the_matrix(matrix)
 
 
-def test_stub_solver_bfs_main_from_the_matrix(matrix):
+def test_stub_solver_dfs_main_from_the_matrix(matrix):
 
     print("here is the puzzle ..")
     print()
@@ -134,17 +169,20 @@ def test_stub_solver_bfs_main_from_the_matrix(matrix):
 
     print()
 
-    solver = SolverBFS(matrix)
+    solver = SolverDFS_Depth_Limited_iterative(matrix)
 
     if not solver.is_solvable:
         print("this puzzle is not solvable... method returns...")
         return
 
-    answer_list, message_short, message_long, time_elapsed = solver.tree_search_BFS()
+    limit = 20
+
+    answer_list, message_short, message_long, time_elapsed = \
+        solver.tree_search_DFS_Depth_Limited_iterative(limit)
 
     s = solver.report_to_string()
     print(s)
 
 
 if __name__ == '__main__':
-    test_stub_solver_bfs_main()
+    test_stub_solver_dfs_main()

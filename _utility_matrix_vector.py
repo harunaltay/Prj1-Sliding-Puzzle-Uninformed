@@ -44,7 +44,7 @@ def create_a_vector_from_a_matrix(matrix):
     return vector
 
 
-def is_this_matrix_one_of__the_solutions(matrix):
+def is_this_matrix_one_of_the_solutions(matrix):
     vector = create_a_vector_from_a_matrix(matrix)
     answer = is_this_list_monotone_increasing_one_by_one(vector)
     return answer
@@ -82,7 +82,7 @@ def test_stub_is_this_list_monontone(n):
 def test_stub_is_this_matrix_one_of_the_solutions(n):
     matrix = create_a_matrix_solution(n)
     matrix = create_a_random_matrix(n)
-    answer = is_this_matrix_one_of__the_solutions(matrix)
+    answer = is_this_matrix_one_of_the_solutions(matrix)
     print(answer)
     for line in matrix:
         print(line)
