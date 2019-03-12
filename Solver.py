@@ -8,6 +8,7 @@ class Solver:
 
         self.queue = deque()
         self.stack = []
+        self.priority_queue = []
 
         self.limit = -1
 

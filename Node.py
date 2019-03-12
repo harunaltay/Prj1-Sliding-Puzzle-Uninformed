@@ -7,9 +7,13 @@ class Node(object):
         self.board = board
         self.node_parent = parent
         self.nodes_children = []
-        self.depth = -1         # Koçum be! Bu lazım olacak: Depth Limited, Iterative Deepening!
+
+        self.depth = -1         # Koçum be! Bu lazım olacak: Depth Limited, Iterative Deepening! ...
+        # Lazım oldu şimdi. Uniform Cost'ta -> path_cost = depth !
+
         self.step_cost = 0      # Russell & Norvig 3.rd ed page 79
-        self.path_cost = 0      # Russell & Norvig 3.rd ed page 79
+        self.path_cost = 0      # Russell & Norvig 3.rd ed page 79 - Uniform_Cost'ta kullanılacak.
+
         self.state = ""         # Russell & Norvig 3.rd ed page 79, 82 -> explored, expanded?, what else?
         self.explored = False   # Bu da benden olsun :-)
         self.expanded = False   # Bu dahi benden -> DFS'de bunu kullanacağım! Öyle görünüyor :-)
@@ -19,6 +23,28 @@ class Node(object):
         self.discovered = False # mark DISCOVERED only after popping the vertex, not before pushig it! Bakınız (*)
                                 # (*) https://www.techiedelight.com/depth-first-search/
                                 # Bu discovered'i GRAPH için kullanıyor. Bizim işimiz TREE ile.
+
+    def __eq__(self, other):
+        return self.depth == other.depth
+
+    def __lt__(self, other):
+        return self.depth < other.depth
+
+    def __gt__(self, other):
+        return self.depth > other.depth
+
+    def __le__(self, other):
+        return self.depth <= other.depth
+
+    def __ge__(self, other):
+        return self.depth >= other.depth
+
+    def __ne__(self, other):
+        return self.depth != other.depth
+
+    def __repr__(self):
+        return "depth: " + str(self.depth)  # böyle kalsın. gerçekte, faydalı olması için, ...
+        # ... vector veya matrisi de yazdırman lazım. bu şimdi sadece debug maksatlı.
 
 
 # explored : ? : Herhalde: Buldun, frontiere push/append ettin. İşte o!
