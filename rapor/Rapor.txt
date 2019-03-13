@@ -1,0 +1,58 @@
+CSE 586 AI - Project 1
+
+Çözülen problem:
+
+8-Puzzle olarak bilinen problemdir. Başka isimleri:
+
+Slider Puzzle
+N Sliding Puzzle
+Sliding-Block Puzzle with N Tiles
+...
+
+dil: Python
+yazdığım toplam satır sayısı, yaklaşık: 1820 satır
+
+test puzzle dosyalarını aldığım yer: princeton üniversitesinin cos226 algoritma web sayfasıdır. Çok işime yaradı, onlar ile test ettim.
+
+5 Yol/Strateji ile çözülmüştür:
+
+BFS
+BFS Uniform Cost
+DFS
+DFS Depth Limited
+DFS Iterative Deepening
+
+Beşinde de Iterative yaklaşım kullanılmıştır.
+
+DFS'ler recursive çok uygun. Ben kolayından başlayım, önce iterative yapayım diye düşündüm. İlk BFS ile başlamış ve iterative'yi yapmış olduğum için, kolay olarak, elimde olan bu çözümü hafif değiştirerek ötekileri de yaptım. İstiyordum ki, DFS grubu 3 adet stratejiyi recursive ile ikinci defa daha yapayım.. fakat zaman bulamadım.
+
+Kodlarda çoklukla yorum kullandım. Bunu kendim için yaptım öncelikle. Fakat bir başkası da bakarken faydalı olabilir.
+
+İsimleri uzun ve kolay anlaşılır vermeye çalıştım. Bir fonksiyonun ismine bakınca, ne yaptığını tahmin edebiliyorsunuz zannederim.
+
+Bir puzzle aldığımız zaman, önce bu puzzle "solvable" midir diye bakıyoruz.
+
+Bunun için matrisi vektör haline çevirip, "inversion sayısını" buluyoruz.
+
+if n is odd -> if number of inversions is even -> solvable
+if n is even -> if number of inversions + row of the blank square is odd -> solvable
+
+Kitaptaki algoritmalardan, şekillerden çok faydalandım. Okudum. Kitap çok güzel.
+
+Her puzzle durumunu (state) bir matrix temsil eder.
+
+initial matrix size verilen puzzledir.
+
+her matrix bir board'ın içindedir.
+
+her board bir node'nin içindedir.
+
+Solver_X: bir puzzleyi, initial matrix olarak alır, onu çözer.
+
+Çözümün sonunda, çözüm adımlarını da adım numarası ile veriyor.
+
+Her solver için bir runner dosyası yapılmıştır, kolayca test edilebilsin, kullanılabilsin diye.
+
+runner'in kullanımı, yanlış yazıldığı zaman veya adı yazıldığı zaman veriliyor. Kullanımını gösteriyor.
+
+

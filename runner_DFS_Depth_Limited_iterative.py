@@ -21,7 +21,7 @@ def runner_solver_dfs_DL_main_from_file():
     # f_name = 'puzzle-text-files/puzzle4x4-unsolvable.txt'
 
     if len(sys.argv) != 3:
-        print("usage: python runner_BFS.py puzzleX.txt 20")
+        print("usage: python runner_DFS_Depth_Limited.py puzzleX.txt 20")
         return
 
     f_name = sys.argv[1]
